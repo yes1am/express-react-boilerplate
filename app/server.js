@@ -11,7 +11,10 @@ const app = express()
 
 app.use(webpackDevMiddleware(compiler, {
   publicPath: config.output.publicPath,
-  hot: true
+  lazy: false,
+  stats: {
+    colors: true
+  }
 }))
 
 // Add hot middleware support, Check [HMR] connected in console
