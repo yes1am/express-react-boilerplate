@@ -1,11 +1,16 @@
 const path = require('path')
 const webpack = require('webpack')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 const generateConfig = (dev) => {
   const plugins = []
   if (dev) {
     plugins.push(
       new webpack.HotModuleReplacementPlugin()
+    )
+  } else {
+    plugins.push(
+      new BundleAnalyzerPlugin()
     )
   }
   return {
