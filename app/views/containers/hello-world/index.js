@@ -4,12 +4,13 @@ import './style.less'
 import './style.css'
 
 class HelloWorld extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-    }
+  componentDidMount () {
+    this.hello()
   }
-  render () {
+  hello = () => {
+    console.log(123)
+  };
+  render = () => {
     return (
       <React.Fragment>
         <div className='title'>

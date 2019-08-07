@@ -21,7 +21,8 @@
     ],
     "include": [
       "webpack"
-    ]
+    ],
+    "parser": "babel-eslint"
   },
   "keywords": [],
   "author": "",
@@ -32,9 +33,11 @@
   "homepage": "https://github.com/yes1am/express-react-boilerplate#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "7.4.4",
     "@babel/preset-react": "7.0.0",
     "antd": "3.18.1",
+    "babel-eslint": "^10.0.2",
     "babel-loader": "8.0.6",
     "babel-plugin-import": "1.11.0",
     "css-loader": "2.1.1",
