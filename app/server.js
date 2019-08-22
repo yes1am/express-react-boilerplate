@@ -1,6 +1,8 @@
 const express = require('express')
 const path = require('path')
 const webpack = require('webpack')
+
+// TODO: 以下涉及到热更新的代码需要判断环境，例如在生产环境下 webpack-dev-middleware 并不存在
 const webpackDevMiddleware = require('webpack-dev-middleware')
 const webpackHotMiddleware = require('webpack-hot-middleware')
 const config = require('../webpack/webpack.dev')
