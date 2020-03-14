@@ -36,6 +36,9 @@ app.all('*', function (req, res) {
   res.send(template.index())
 })
 
-app.listen(3004, function () {
-  console.log('Example app listening on port 3004!')
+app.listen(3004, '0.0.0.0', function () {
+  console.log(`
+===================================
+Example app listening on port 3004!
+===================================`)
 })

@@ -21,11 +21,8 @@ const generateConfig = (dev) => {
       rules: [
         {
           test: /\.jsx?$/,
-          exclude: /node_modules/,
-          include: path.resolve(__dirname, '../app/views'),
-          use: {
-            loader: 'babel-loader'
-          }
+          use: ['source-map-loader', 'babel-loader'],
+          enforce: 'pre'
         },
         {
           test: /\.(less|css)$/,
