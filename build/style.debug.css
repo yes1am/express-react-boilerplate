@@ -1,0 +1,90 @@
+.title {
+  color: blue;
+  font-size: 0.266667rem;
+}
+
+.flag {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.053333rem;
+}
+
+[data-dpr="1"] .figure img {
+  width: 1rem;
+  height: 1rem;
+}
+
+[data-dpr="2"] .figure img {
+  width: 2rem;
+  height: 2rem;
+}
+
+[data-dpr="3"] .figure img {
+  width: 3rem;
+  height: 3rem;
+}
+
+[data-dpr="1"] .flag-title {
+  margin-bottom: 0.08rem;
+}
+
+[data-dpr="2"] .flag-title {
+  margin-bottom: 0.16rem;
+}
+
+[data-dpr="3"] .flag-title {
+  margin-bottom: 0.24rem;
+}
+
+.figcaption {
+  display: flex;
+  flex-direction: column;
+}
+
+[data-dpr="1"] .flag-price {
+  margin-bottom: 0.106667rem;
+}
+
+[data-dpr="2"] .flag-price {
+  margin-bottom: 0.213333rem;
+}
+
+[data-dpr="3"] .flag-price {
+  margin-bottom: 0.32rem;
+}
+
+.flag-price span {
+  background: #f32a4c;
+  color: white;
+}
+
+[data-dpr="1"] .flag-type {
+  margin-bottom: 0.093333rem;
+}
+
+[data-dpr="2"] .flag-type {
+  margin-bottom: 0.186667rem;
+}
+
+[data-dpr="3"] .flag-type {
+  margin-bottom: 0.28rem;
+}
+
+.flag-btn {
+  background: #f5294c;
+}
+
+[data-dpr="1"] .flag-btn {
+  margin-right: 0.126667rem;
+  margin-bottom: 0.1rem;
+}
+
+[data-dpr="2"] .flag-btn {
+  margin-right: 0.253333rem;
+  margin-bottom: 0.2rem;
+}
+
+[data-dpr="3"] .flag-btn {
+  margin-right: 0.38rem;
+  margin-bottom: 0.3rem;
+}

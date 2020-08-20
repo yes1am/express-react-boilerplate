@@ -1,4 +1,53 @@
 .title {
   color: blue;
-  font-size: 20px;
+  font-size: 0.266667rem;
+}
+
+.flag {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.053333rem;
+}
+
+
+ .figure img {
+  width: 2rem;
+  height: 2rem;
+}
+
+
+ .flag-title {
+  margin-bottom: 0.16rem;
+}
+
+
+.figcaption {
+  display: flex;
+  flex-direction: column;
+}
+
+
+ .flag-price {
+  margin-bottom: 0.213333rem;
+}
+
+
+.flag-price span {
+  background: #f32a4c;
+  color: white;
+}
+
+ .flag-type {
+  margin-bottom: 0.186667rem;
+}
+
+
+.flag-btn {
+  background: #f5294c;
+}
+
+
+ .flag-btn {
+  margin-right: 0.253333rem;
+  margin-bottom: 0.2rem;
 }
