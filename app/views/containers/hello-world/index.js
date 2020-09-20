@@ -6,6 +6,10 @@ import './style.css'
 class HelloWorld extends Component {
   componentDidMount () {
     this.hello()
+    console.log('123')
+    window.fetch('http://www.xxxx.com').then(res => {
+      console.log('res', res)
+    })
   }
   hello = () => {
     console.log(123)

@@ -10,6 +10,13 @@ const index = (req, res) => {
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      fetch('http://www.aaaa.com/api', {
+        credentials:"include"
+      }).then(res => {
+        console.log(res, 'res');
+      })
+    </script>
   </body>
   <script type="text/javascript" src='/assets/app.js'></script>
 </html>`
