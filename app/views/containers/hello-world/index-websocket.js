@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Button } from 'antd'
 import './style.less'
 import './style.css'
-// import WebSocket from 'isomorphic-ws'
 
 class HelloWorld extends Component {
   constructor (props) {
@@ -16,7 +15,7 @@ class HelloWorld extends Component {
   }
 
   connect () {
-    const ws = new WebSocket('ws://localhost:8080')
+    const ws = new WebSocket('ws://localhost:8080/')
     this.ws = ws
 
     ws.onerror = function (e) {

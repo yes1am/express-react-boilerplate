@@ -19,11 +19,11 @@ app.use(webpackDevMiddleware(compiler, {
   }
 }))
 
-// Add hot middleware support, Check [HMR] connected in console
-app.use(webpackHotMiddleware(compiler, {
-  log: console.log,
-  path: '/__webpack_hmr'
-}))
+// // Add hot middleware support, Check [HMR] connected in console
+// app.use(webpackHotMiddleware(compiler, {
+//   log: console.log,
+//   path: '/__webpack_hmr'
+// }))
 
 // 静态资源
 app.use('/static', express.static(path.resolve(__dirname, './static')))

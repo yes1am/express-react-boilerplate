@@ -6,7 +6,8 @@ module.exports = Object.assign({
   // 开启 source map，方便在 chrome source 中查看可阅读的代码
   devtool: 'source-map',
   entry: {
-    app: ['./app/views/index.js', 'webpack-hot-middleware/client?path=/__webpack_hmr&reload=true']
+    // app: ['./app/views/index.js', 'webpack-hot-middleware/client?path=/__webpack_hmr&reload=true']
+    app: ['./app/views/index.js']
   },
   output: {
     path: path.resolve(__dirname, '../dist/assets'),
