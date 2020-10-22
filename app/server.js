@@ -11,6 +11,26 @@ const template = require('./template')
 
 const app = express()
 
+const sleep = (seconds) => {
+  return new Promise(resove => {
+    setTimeout(() => {
+      resove()
+    }, seconds * 1000)
+  })
+}
+
+app.get('/json', async (req, res) => {
+  let i = 1
+  const t = setInterval(() => {
+    console.log('正在处理', i++)
+  }, 200)
+  await sleep(2)
+  clearInterval(t)
+  res.send({
+    a: 1
+  })
+})
+
 app.use(webpackDevMiddleware(compiler, {
   publicPath: config.output.publicPath,
   lazy: false,
