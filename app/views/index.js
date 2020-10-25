@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Container from './containers'
+import Upload from './containers/upload'
 
 ReactDOM.render(
-  <Container.HelloWorld />,
+  <Upload />,
   document.getElementById('root')
 )
