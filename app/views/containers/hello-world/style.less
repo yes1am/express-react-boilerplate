@@ -4,3 +4,40 @@ body {
     margin: 0 auto;
   }
 }
+.summary-val {
+  color: #172b4d;
+  height: 36px;
+  line-height: 36px;
+}
+
+.editor-container {
+  cursor: text;
+  &:hover {
+    box-shadow: 0 0 0 2px #ebecf0;
+  }
+  .input-wrap {
+    position: relative;
+    input {
+      display: inline-block;
+      width: 100%;
+      outline: none;
+      border: 2px solid rgb(78, 155, 255);
+      box-sizing: border-box;
+      height: 36px;
+      line-height: 32px;
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
+    button {
+      position: absolute;
+      top: 36px;
+    }
+    .confirm {
+      right: 45px;
+    }
+    .cancel {
+      right: 0px;
+    }
+  }
+}
