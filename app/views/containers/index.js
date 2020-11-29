@@ -1,4 +1,4 @@
-import HelloWorld from './hello-world'
+import HelloWorld from './hello-world/index.jsx'
 
 export default {
   HelloWorld
