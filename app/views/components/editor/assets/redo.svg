@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>redo-24px</title>
+    <g id="Dispute-Details" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dispute-Details----judge-标题栏长按拖拽" transform="translate(-730.000000, -339.000000)">
+            <g id="judge" transform="translate(622.000000, 24.000000)">
+                <g id="Group-13" transform="translate(24.000000, 72.000000)">
+                    <g id="Group-11" transform="translate(0.000000, 165.000000)">
+                        <g id="Group-14" transform="translate(0.000000, 66.000000)">
+                            <g id="redo-24px" transform="translate(84.000000, 12.000000)">
+                                <polygon id="Path" points="0 0 16 0 16 16 0 16"></polygon>
+                                <path d="M11.888563,8 C10.8035191,7.10555556 9.39589443,6.55555556 7.84164223,6.55555556 C5.1143695,6.55555556 2.80938416,8.23888889 2,10.5666667 L3.38416422,11 C4,9.22777778 5.75953079,7.94444444 7.84164223,7.94444444 C8.98533724,7.94444444 10.0293255,8.34444444 10.8445748,8.98888889 L8.72140762,11 L14,11 L14,6 L11.888563,8 Z" id="Path" fill="#445571" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

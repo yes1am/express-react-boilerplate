@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 16</title>
+    <g id="Dispute-Details" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dispute-Details----judge-标题栏长按拖拽" transform="translate(-988.000000, -339.000000)">
+            <g id="judge" transform="translate(622.000000, 24.000000)">
+                <g id="Group-13" transform="translate(24.000000, 72.000000)">
+                    <g id="Group-11" transform="translate(0.000000, 165.000000)">
+                        <g id="Group-14" transform="translate(0.000000, 66.000000)">
+                            <g id="Group-16" transform="translate(342.000000, 12.000000)">
+                                <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+                                <g id="Group-17" transform="translate(4.000000, 3.000000)" fill="#445571" fill-rule="nonzero">
+                                    <path d="M1.78369141,9.2421875 L2.53271484,7.09033203 L6.11279297,7.09033203 L6.86816406,9.2421875 L8.54394531,9.2421875 L5.04638672,0 L3.60546875,0 L0.114257812,9.2421875 L1.78369141,9.2421875 Z M5.66210938,5.79541016 L2.98339844,5.79541016 L4.32275391,1.96142578 L5.66210938,5.79541016 Z" id="A"></path>
+                                    <polygon id="Decoration" points="2.27373675e-13 10.1943359 8.4496875 10.1943359 8.4496875 9.55957031 2.27373675e-13 9.55957031"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,335 @@
+/* Variables */
+.rich-text-editor {
+  position: relative;
+  width: 100%;
+}
+.rich-text-editor .ql-container {
+  height: 500px;
+  overflow: scroll;
+}
+.rich-text-editor .ql-editor.ql-blank:before {
+  color: #a6aebc;
+}
+.rich-text-editor .quill-code {
+  border: none;
+  height: auto;
+}
+.rich-text-editor .quill-code > code {
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0;
+  height: 10rem;
+  overflow-y: auto;
+  resize: vertical;
+}
+.rich-text-editor em {
+  font-style: italic;
+}
+.rich-text-editor .ql-container {
+  min-height: 200px;
+  white-space: pre-wrap;
+}
+.rich-text-editor .ql-snow .ql-editor pre {
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color: white;
+  padding: 0;
+  border-radius: 0;
+}
+.rich-text-editor .ql-snow .ql-picker-label:before {
+  vertical-align: top;
+}
+.rich-text-editor .ql-snow .ql-color-picker .ql-picker-label svg,
+.rich-text-editor .ql-snow .ql-icon-picker .ql-picker-label svg {
+  vertical-align: top;
+}
+.rich-text-editor button.ql-redo:hover svg,
+.rich-text-editor button.ql-undo:hover svg {
+  fill: blue;
+}
+.rich-text-editor .ql-toolbar .ql-formats {
+  margin-right: 0;
+}
+.rich-text-editor .ql-toolbar .ql-formats:not(:last-child) {
+  border-right: 1px solid #e5e5e5;
+}
+.rich-text-editor .ql-snow .ql-picker.ql-size {
+  width: auto;
+}
+.rich-text-editor .ql-snow .ql-picker.ql-size .ql-picker-label-dropdown {
+  display: flex;
+  align-items: center;
+}
+.rich-text-editor .ql-snow .ql-picker.ql-size .ql-picker-label-dropdown::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url('./assets/font-size.jpg');
+  background-size: 16px 16px;
+}
+.rich-text-editor .ql-snow .ql-picker.ql-size .ql-picker-label-dropdown > svg {
+  position: static;
+  margin-top: 0;
+  width: 18px;
+}
+.rich-text-editor .ql-snow .ql-picker.ql-size .ql-picker-item::before {
+  content: 'Normal';
+}
+.rich-text-editor .ql-snow .ql-picker.ql-size .ql-picker-item[data-value='10px']::before {
+  content: 'Small';
+}
+.rich-text-editor .ql-snow .ql-picker.ql-size .ql-picker-item[data-value='18px']::before {
+  content: 'Large';
+}
+.rich-text-editor .ql-snow .ql-picker.ql-size .ql-picker-item[data-value='32px']::before {
+  content: 'Huge';
+}
+.rich-text-editor .ql-snow .ql-picker.ql-font .ql-picker-label::before,
+.rich-text-editor .ql-snow .ql-picker.ql-font .ql-picker-item::before {
+  content: 'Default';
+  font-size: 12px;
+  white-space: nowrap;
+  width: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rich-text-editor .ql-snow .ql-picker.ql-font .ql-picker-label[data-value='sans-serif']::before,
+.rich-text-editor .ql-snow .ql-picker.ql-font .ql-picker-item[data-value='sans-serif']::before {
+  content: 'Sans Serif';
+}
+.rich-text-editor .ql-snow .ql-picker.ql-font .ql-picker-label[data-value=serif]::before,
+.rich-text-editor .ql-snow .ql-picker.ql-font .ql-picker-item[data-value=serif]::before {
+  content: 'Serif';
+}
+.rich-text-editor .ql-snow .ql-picker.ql-font .ql-picker-label[data-value=monospace]::before,
+.rich-text-editor .ql-snow .ql-picker.ql-font .ql-picker-item[data-value=monospace]::before {
+  content: 'Monospace';
+}
+.rich-text-editor .ql-expanded .ql-picker-label-dropdown svg {
+  fill: #ccc;
+  transform: rotate(180deg);
+}
+.rich-text-editor .ql-snow .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg {
+  width: 16px;
+  position: static;
+  margin-top: unset;
+  right: unset;
+  top: unset;
+}
+.rich-text-editor .ql-snow .ql-picker-label {
+  padding-right: 8px;
+}
+.rich-text-editor .ql-toolbar.ql-snow .ql-picker-label {
+  border: none;
+}
+.rich-text-editor .ql-picker-label-dropdown {
+  display: flex;
+  align-items: center;
+}
+.rich-text-editor .ql-toolbar {
+  padding: 8px 0;
+}
+.rich-text-editor .ql-picker.ql-font .ql-picker-label:before {
+  margin-right: 4px;
+}
+.rich-text-editor .ql-snow .ql-picker.ql-font {
+  width: auto;
+}
+.rich-text-editor .ql-undo,
+.rich-text-editor .ql-redo {
+  width: auto!important;
+  padding: 0!important;
+}
+.rich-text-editor .ql-undo > svg,
+.rich-text-editor .ql-redo > svg {
+  width: 16px!important;
+  height: 16px!important;
+}
+.rich-text-editor .ql-undo {
+  margin: 0 8px;
+}
+.rich-text-editor .ql-redo {
+  margin-right: 8px;
+}
+.rich-text-editor .ql-color-picker {
+  width: auto;
+  margin-right: 8px;
+}
+.rich-text-editor .ql-color-picker .ql-picker-label {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.rich-text-editor .ql-color-picker .ql-picker-label > svg {
+  height: 16px;
+  width: 16px;
+}
+.rich-text-editor .ql-bold,
+.rich-text-editor .ql-italic,
+.rich-text-editor .ql-underline,
+.rich-text-editor .ql-strike {
+  width: auto!important;
+  height: 24px;
+  padding: 0!important;
+}
+.rich-text-editor .ql-bold > svg,
+.rich-text-editor .ql-italic > svg,
+.rich-text-editor .ql-underline > svg,
+.rich-text-editor .ql-strike > svg {
+  width: 16px;
+  height: 16px;
+}
+.rich-text-editor .ql-bold {
+  margin: 0 8px;
+}
+.rich-text-editor .ql-italic,
+.rich-text-editor .ql-underline,
+.rich-text-editor .ql-strike {
+  margin-right: 8px;
+}
+.rich-text-editor .ql-list {
+  width: auto!important;
+  padding: 0!important;
+}
+.rich-text-editor .ql-list:nth-child(1) {
+  margin: 0 8px;
+}
+.rich-text-editor .ql-list:nth-child(2) {
+  margin-right: 8px;
+}
+.rich-text-editor .ql-list > svg {
+  width: 16px!important;
+  height: 16px!important;
+}
+.rich-text-editor .ql-align {
+  width: auto!important;
+  margin: 0 8px;
+}
+.rich-text-editor .ql-align > .ql-picker-label {
+  padding: 0!important;
+  display: flex;
+  align-items: center;
+}
+.rich-text-editor .ql-align > .ql-picker-label > svg {
+  width: 16px!important;
+  height: 16px!important;
+}
+.rich-text-editor .ql-clean,
+.rich-text-editor .ql-link,
+.rich-text-editor .ql-indent,
+.rich-text-editor .ql-script {
+  width: auto!important;
+  padding: 0!important;
+  margin: 0 8px;
+}
+.rich-text-editor .ql-clean > svg,
+.rich-text-editor .ql-link > svg,
+.rich-text-editor .ql-indent > svg,
+.rich-text-editor .ql-script > svg {
+  width: 16px;
+  height: 16px;
+}
+.rich-text-editor .ql-script:nth-child(1) {
+  margin: 0 8px;
+}
+.rich-text-editor .ql-script:nth-child(2) {
+  margin-right: 8px;
+  margin-left: 0;
+}
+.ql-snow .ql-tooltip::before {
+  content: 'Link:';
+}
+div.ql-video {
+  display: inline-block !important;
+}
+.link-modal .link-edit-title {
+  font-size: 14px;
+  line-height: 18px;
+  color: #445571;
+  margin-bottom: 8px;
+  margin-top: 4px;
+}
+.link-modal .link-edit-select {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2673dd;
+  cursor: pointer;
+}
+.ql-snow .ql-tooltip {
+  padding: 16px;
+}
+.ql-snow .ql-tooltip:before {
+  display: inline-block;
+  color: #445571;
+  line-height: 18px;
+}
+.ql-snow .ql-tooltip a.ql-preview:hover,
+.ql-snow .ql-tooltip a.ql-preview:visited,
+.ql-snow .ql-tooltip a.ql-preview:link,
+.ql-snow .ql-tooltip a.ql-preview:active {
+  display: inline-block;
+  line-height: 18px;
+  height: 18px;
+  color: #2673dd;
+  max-width: 144px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ql-snow .ql-tooltip a.ql-action {
+  line-height: 18px;
+}
+.ql-snow .ql-tooltip a.ql-action:after {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #2673dd;
+  cursor: pointer;
+}
+.ql-snow .ql-tooltip a.ql-remove {
+  line-height: 18px;
+}
+.ql-snow .ql-tooltip a.ql-remove:before {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 18px;
+  color: #2673dd;
+  cursor: pointer;
+}
+.video-modal {
+  box-sizing: border-box;
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 0px 26px rgba(10, 31, 68, 0.12);
+  border-radius: 2px;
+  font-size: 14px;
+  background: white;
+}
+.video-modal textarea {
+  height: 160px;
+}
+/* TODO: 注释样式 */
+/* .video-modal .modal-content {
+  width: 640px;
+  overflow: hidden;
+} */
+.video-modal .video-tooltip-title {
+  font-weight: 500;
+  line-height: 18px;
+  color: #0a1f44;
+  margin-bottom: 8px;
+}
+.video-modal .video-tooltip-title-desc {
+  font-size: 14px;
+  line-height: 18px;
+  color: #0a1f44;
+  margin-top: 8px;
+  word-break: break-word;
+  user-select: text;
+}
