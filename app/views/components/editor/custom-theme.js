@@ -4,9 +4,12 @@ import Emitter from '../quill/core/emitter'
 // import BaseTheme, { BaseTooltip } from 'quill/themes/base';
 import { Range } from '../quill/core/selection'
 import extend from 'extend'
-import icons from './icon'
 import BaseTheme, { BaseTooltip } from './base-theme'
 import emitter from './utils/emitter'
+// 使用自定义图标
+// import icons from './icon'
+// 使用默认图标
+const icons = Quill.import('ui/icons')
 
 // 只能用 Quill.import，不能使用 import ... from ..., 否则点击已有链接的文字，无法弹出编辑窗
 const LinkBlot = Quill.import('formats/link')
