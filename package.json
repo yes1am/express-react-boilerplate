@@ -60,6 +60,7 @@
   "dependencies": {
     "express": "4.16.4",
     "lodash": "^4.17.15",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "svg-inline-loader": "^0.8.2"
   }
 }

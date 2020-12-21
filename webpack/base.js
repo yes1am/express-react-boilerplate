@@ -39,6 +39,10 @@ const generateConfig = (dev) => {
           }
         },
         {
+          test: /\.svg$/,
+          loader: 'svg-inline-loader'
+        },
+        {
           test: /\.(eot|otf|ttf|woff|woff2$)$/,
           use: {
             loader: 'file-loader'
