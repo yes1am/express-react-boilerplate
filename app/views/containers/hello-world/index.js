@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import './style.less'
 import './style.css'
 
+import { Toast } from 'antd-mobile'
+
 class HelloWorld extends Component {
   componentDidMount () {
     this.hello()
@@ -15,6 +17,9 @@ class HelloWorld extends Component {
       <React.Fragment>
         <div className='title'>
             Hello, express-react-dev-template
+        </div>
+        <div onClick={() => Toast.info('123123')}>
+          toast
         </div>
         {/* <Icon type='android' /> */}
       </React.Fragment>

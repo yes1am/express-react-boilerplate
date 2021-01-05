@@ -5,8 +5,17 @@
             "import", {
                 "libraryName": "antd",
                 "style": true
-            }
+            },
+            "antd"
         ],
-        ["@babel/plugin-proposal-class-properties", { "loose": true }]
+        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+        [
+            "import", { 
+                "libraryName": "antd-mobile",
+                "style": true
+                // "style": "css" // `style: true` 会加载 less 文件
+            },
+            "antd-mobile"
+        ] 
     ]
 }
