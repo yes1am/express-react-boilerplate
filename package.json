@@ -58,6 +58,7 @@
     "webpack-hot-middleware": "2.25.0"
   },
   "dependencies": {
+    "ahooks": "^2.9.3",
     "antd-mobile": "^2.3.4",
     "express": "4.16.4",
     "lodash": "^4.17.15",
