@@ -6,6 +6,10 @@ module.exports = Object.assign({
   entry: {
     app: './app/views/index.js'
   },
+  // 是否进行代码压缩
+  optimization: {
+    minimize: false // <---- disables uglify.
+  },
   output: {
     path: path.resolve(__dirname, '../dist/assets'),
     publicPath: '/assets',
