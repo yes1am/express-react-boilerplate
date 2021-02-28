@@ -54,12 +54,15 @@ class SnowTooltip extends BaseTooltip {
         return
       }
 
+      console.log('SELECTION_CHANGE')
+
       // 如果不是点击链接区域，就删除 linkRange
       // 否则点击链接中间，出现 tooktip => 点击链接末尾 => 点击 link toolbar， 并确认插入链接，会直接替换了已有的链接
       delete this.linkRange
       if (range.length === 0 && source === Emitter.sources.USER) {
         const [link, offset] = this.quill.scroll.descendant(LinkBlot, range.index)
         if (link != null) {
+          console.log('创建 link Range')
           // 如果点击的是链接区域
           this.linkRange = new Range(range.index - offset, link.length())
           const preview = LinkBlot.formats(link.domNode)

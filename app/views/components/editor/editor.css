@@ -333,3 +333,7 @@ div.ql-video {
   word-break: break-word;
   user-select: text;
 }
+
+.ql-editor {
+  height: 200px;
+}

@@ -8,6 +8,9 @@ const EVENTS = ['selectionchange', 'mousedown', 'mouseup', 'click']
 EVENTS.forEach(function (eventName) {
   document.addEventListener(eventName, (...args) => {
     [].slice.call(document.querySelectorAll('.ql-container')).forEach((node) => {
+      if (eventName === 'mouseup') {
+        // console.log(node.__quill, node.__quill.emitter)
+      }
       // TODO use WeakMap
       if (node.__quill && node.__quill.emitter) {
         node.__quill.emitter.handleDOM(...args)
@@ -29,8 +32,12 @@ class Emitter extends EventEmitter {
   }
 
   handleDOM (event, ...args) {
+    if (event.type === 'mouseup') {
+      // console.log('444', this.listeners[event.type])
+    }
     (this.listeners[event.type] || []).forEach(function ({ node, handler }) {
       if (event.target === node || node.contains(event.target)) {
+        // console.log(event.type, 'event.type')
         handler(event, ...args)
       }
     })

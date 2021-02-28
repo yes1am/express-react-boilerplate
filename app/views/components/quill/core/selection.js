@@ -319,6 +319,7 @@ class Selection {
     if (this.lastRange != null) {
       this.savedRange = this.lastRange
     }
+    // console.log('update', !equal(oldRange, this.lastRange))
     if (!equal(oldRange, this.lastRange)) {
       if (!this.composing && nativeRange != null && nativeRange.native.collapsed && nativeRange.start.node !== this.cursor.textNode) {
         this.cursor.restore()

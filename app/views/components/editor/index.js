@@ -71,6 +71,7 @@ class Editor extends Component {
           })
         },
         link: (value) => {
+          console.log('value', value)
           // 添加 link 时，value 为 true，删除 link 时，value 为 false
           const range = this.quill.getSelection(true)
           const [link, offset] = this.quill.scroll.descendant(LinkBlot, range.index)
@@ -269,6 +270,8 @@ class Editor extends Component {
     const { scrollTop } = this.quill.root
     const { linkRange } = this.quill.theme.tooltip
 
+    console.log('linkRange', linkRange)
+
     if (linkRange) {
       // 当点击已有链接的链接时
       this.quill.deleteText(linkRange.index, linkRange.length)
@@ -285,7 +288,10 @@ class Editor extends Component {
       const range = this.quill.getSelection(true)
       // 删除选中的文字，插入链接
       this.quill.deleteText(range.index, range.length)
-      this.quill.insertText(range.index, linkTitle || linkValue, 'link', linkValue)
+      setTimeout(() => {
+        this.quill.insertText(range.index, linkTitle || linkValue, 'link', linkValue)
+      }, 0)
+      
 
       // 手动插入空格，先不删除该代码，毕竟挺难写的
       // const currentIndex = range.index + (linkTitle || linkValue).length;

@@ -139,6 +139,7 @@ class Quill {
 
   focus () {
     let scrollTop = this.scrollingContainer.scrollTop
+    console.log(this.scrollingContainer, '2@@@')
     this.selection.focus()
     this.scrollingContainer.scrollTop = scrollTop
     this.scrollIntoView()
